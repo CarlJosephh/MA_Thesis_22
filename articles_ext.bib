@@ -1,0 +1,244 @@
+@book{united2012world,
+  title={World Urbanization
+Prospects: The 2018 Revision},
+  author={{United Nations}},
+  year={2019},
+  publisher={United Nations, Department of Economic and Social Affairs, Population Division},
+  address = {New York},
+  url = {https://population.un.org/wup/Publications/Files/WUP2018-Report.pdf}
+  %isbn = {978-92-1-148319-2}
+} %increase of urbanisation in most countries worldwide
+
+% This file was created with Citavi 6.3.0.0
+
+%Defrise dataset
+@Manual{Defrise.19,
+    author = {Defrise, Laurence and Andriamanga, Valérie and Rasoamalala, Eloise and Dupuy, Stéphane and Burnod, Perrine}, 
+    year = {2019}, 
+    title = {Antananarivo - Madagascar - 2017, Land use reference spatial database}, 
+    url = {doi:10.18167/DVN1/5TZOOW}, 
+    publisher = {CIRAD Dataverse, V1}
+    }
+    
+%roads
+ @misc{OpenStreetMap,
+   author = {{OpenStreetMap contributors}},
+   title = {{Planet dump retrieved from https://planet.osm.org }},
+   howpublished = "\url{ https://www.openstreetmap.org }",
+   year = {2022},
+ }
+
+@article{Cohen.1960,
+author = {Jacob Cohen},
+title ={A Coefficient of Agreement for Nominal Scales},
+journal = {Educational and Psychological Measurement},
+volume = {20},
+number = {1},
+pages = {37-46},
+year = {1960},
+doi = {10.1177/001316446002000104},
+URL = { https://doi.org/10.1177/001316446002000104},
+eprint = {  https://doi.org/10.1177/001316446002000104}
+
+}
+
+@misc{Dupuy.2019, %Dupuy land cover change
+author = {Dupuy, Stéphane and Defrise, Laurence and Burnod, Perrine},
+year = {2019}, 
+title = {Antananarivo - Madagascar - Land use change map between 2003 and 2017}, 
+url = {doi:10.18167/DVN1/VQZZI0}, 
+publisher = {CIRAD Dataverse,V2},
+ }
+ 
+@misc{Geofabrik,
+    author = {Geofabrik},
+    title = {Madagascar},
+    year = {2022},
+    url = {http://download.geofabrik.de/africa/madagascar.html},
+    urldate = {09.09.2022}
+}
+
+@article{Jones.1988,%beneficial use of elevation and slope data for classification purposes
+author = { A. R.   Jones  and  J. J.   Settle  and  B. K.   Wyatt },
+title = {Use of digital terrain data in the interpretation of SPOT-1 HRV multispectral imagery},
+journal = {International Journal of Remote Sensing},
+volume = {9},
+number = {4},
+pages = {669-682},
+year  = {1988},
+publisher = {Taylor & Francis},
+doi = {10.1080/01431168808954885},
+URL = { https://doi.org/10.1080/01431168808954885},
+eprint = {https://doi.org/10.1080/01431168808954885}
+}
+
+@inproceedings{Rouse.1973,%first usage NDVI
+  title={Monitoring vegetation systems in the great plains with ERTS},
+  author={John Wilson Rouse and Robert H. Haas and John A. Schell and D. W. Deering},
+  year={1973}
+}
+
+@article{Franklin.1987,%slope beneficial for classification
+Author = {Franklin, S.E.},
+Title = {Terrain Analysis from Digital Patterns in Geomorphometry and Landsat MSS Spectral Response},
+Journal = {Photogrammetric Engineering and Remote Sensing},
+Year = {1987},
+Volume = {53},
+Number = {1},
+Pages = {59-65},
+Month = {JAN},
+ISSN = {0099-1112},
+ORCID-Numbers = {Franklin, Steven/0000-0003-1886-9153},
+Unique-ID = {WOS:A1987F725900004},
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%R citations
+
+ @Manual{baseR,
+    title = {R: A Language and Environment for Statistical Computing},
+    author = {{R Core Team}},
+    organization = {R Foundation for Statistical Computing},
+    address = {Vienna, Austria},
+    year = {2022},
+    url = {https://www.R-project.org/},
+  }
+   
+ @Manual{studioR,
+    title = {RStudio: Integrated Development Environment for R},
+    author = {{RStudio Team}},
+    organization = {RStudio, PBC},
+    address = {Boston, MA},
+    year = {2022},
+    url = {http://www.rstudio.com/},
+  }
+  
+%Rpackages
+%plotting
+  @Book{ggplot2,
+    author = {Hadley Wickham},
+    title = {ggplot2: Elegant Graphics for Data Analysis},
+    publisher = {Springer-Verlag New York},
+    year = {2016},
+    isbn = {978-3-319-24277-4},
+    url = {https://ggplot2.tidyverse.org},
+  }
+  
+@Manual{ggforce,
+    title = {ggforce: Accelerating 'ggplot2'},
+    author = {Thomas Lin Pedersen},
+    year = {2021},
+    note = {R package version 0.3.3},
+    url = {https://CRAN.R-project.org/package=ggforce},
+  }  
+ 
+ %graphic devices for data export
+ @Manual{ragg,
+    title = {ragg: Graphic Devices Based on AGG},
+    author = {Thomas Lin Pedersen and Maxim Shemanarev},
+    year = {2022},
+    note = {R package version 1.2.2},
+    url = {https://CRAN.R-project.org/package=ragg},
+  }
+
+%exporting plots to latex
+ @Manual{xtable,
+    title = {xtable: Export Tables to LaTeX or HTML},
+    author = {David B. Dahl and David Scott and Charles Roosen and Arni Magnusson and Jonathan Swinton},
+    year = {2019},
+    note = {R package version 1.8-4},
+    url = {https://CRAN.R-project.org/package=xtable},
+  }
+
+%data processing and manipulation
+@Manual{dplyr,
+    title = {dplyr: A Grammar of Data Manipulation},
+    author = {Hadley Wickham and Romain François and Lionel Henry and Kirill Müller},
+    year = {2022},
+    note = {R package version 1.0.9},
+    url = {https://CRAN.R-project.org/package=dplyr},
+  }
+ 
+@Manual{naniar,%removing na values
+    title = {naniar: Data Structures, Summaries, and Visualisations for Missing Data},
+    author = {Nicholas Tierney and Di Cook and Miles McBain and Colin Fay},
+    year = {2021},
+    note = {R package version 0.6.1},
+    url = {https://CRAN.R-project.org/package=naniar},
+  } 
+
+%logistic regression applications and coefficients
+@Manual{caret,
+    title = {caret: Classification and Regression Training},
+    author = {Max Kuhn},
+    year = {2022},
+    note = {R package version 6.0-92},
+    url = {https://CRAN.R-project.org/package=caret},
+  }
+  
+@Article{pscl,
+    title = {Regression Models for Count Data in {R}},
+    author = {Achim Zeileis and Christian Kleiber and Simon Jackman},
+    journal = {Journal of Statistical Software},
+    year = {2008},
+    volume = {27},
+    number = {8},
+    url = {http://www.jstatsoft.org/v27/i08/},
+    }
+ % 
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+@Article{tidyverse,%mainly used ggplot and dplyr from here
+    title = {Welcome to the {tidyverse}},
+    author = {Hadley Wickham and Mara Averick and Jennifer Bryan and Winston Chang and Lucy D'Agostino McGowan and Romain François and Garrett Grolemund and Alex Hayes and Lionel Henry and Jim Hester and Max Kuhn and Thomas Lin Pedersen and Evan Miller and Stephan Milton Bache and Kirill Müller and Jeroen Ooms and David Robinson and Dana Paige Seidel and Vitalie Spinu and Kohske Takahashi and Davis Vaughan and Claus Wilke and Kara Woo and Hiroaki Yutani},
+    year = {2019},
+    journal = {Journal of Open Source Software},
+    volume = {4},
+    number = {43},
+    pages = {1686},
+    doi = {10.21105/joss.01686},
+  }
+
+%unsure if necessary
+@Manual{tibble,
+    title = {tibble: Simple Data Frames},
+    author = {Kirill Müller and Hadley Wickham},
+    year = {2022},
+    note = {R package version 3.1.7},
+    url = {https://CRAN.R-project.org/package=tibble},
+  }
+  
+@Manual{patchwork,
+    title = {patchwork: The Composer of Plots},
+    author = {Thomas Lin Pedersen},
+    year = {2020},
+    note = {R package version 1.1.1},
+    url = {https://CRAN.R-project.org/package=patchwork},
+  }
+  
+@Manual{gridExtra,
+    title = {gridExtra: Miscellaneous Functions for "Grid" Graphics},
+    author = {Baptiste Auguie},
+    year = {2017},
+    note = {R package version 2.3},
+    url = {https://CRAN.R-project.org/package=gridExtra},
+  }
+  
+@Manual{cowplot,
+    title = {cowplot: Streamlined Plot Theme and Plot Annotations for 'ggplot2'},
+    author = {Claus O. Wilke},
+    year = {2020},
+    note = {R package version 1.1.1},
+    url = {https://CRAN.R-project.org/package=cowplot},
+  }
+  
+ @Manual{pixiedust,
+    title = {pixiedust: Tables so Beautifully Fine-Tuned You Will Believe It's Magic},
+    author = {Benjamin Nutter},
+    year = {2021},
+    note = {R package version 0.9.1},
+    url = {https://CRAN.R-project.org/package=pixiedust},
+  }
+  
+  

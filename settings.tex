@@ -1,0 +1,72 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%Preamble
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+%\renewcommand{\chaptername}{}
+\usepackage{titlesec}
+\titleformat{\chapter}[hang]{\huge\bfseries}{\thechapter{. }}{0pt}{\huge\bfseries}
+
+%use biblatex with natbib
+\usepackage[style=apa, sorting = nyt, natbib]{biblatex}
+%\usepackage[style=apa, maxnames=1, sorting = nyt, natbib]{biblatex}
+\addbibresource{Bibliography.bib}
+\addbibresource{R-cite.bib}
+\addbibresource{news.bib}
+\addbibresource{articles_ext.bib}
+%\bibliographystyle{apalike}
+
+%package to create hyperlinks
+\usepackage[hidelinks]{hyperref}
+
+%no indents with new paragraphs and set gap length
+\setlength\parindent{0pt}
+\setlength{\parskip}{0.5\baselineskip}
+
+%graphics and tikzipictures
+\newenvironment{rotatepage}%rotate pdf page
+    {\clearpage\pagebreak[4]\global\pdfpageattr\expandafter{\the\pdfpageattr/Rotate 90}}%
+    {\clearpage\pagebreak[4]\global\pdfpageattr\expandafter{\the\pdfpageattr/Rotate 0}}%
+    
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, text width=3cm, draw=black]%, fill=red!30
+\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=2cm, minimum height=1cm, text centered, text width=2.7cm, draw=black]%, fill=blue!30
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, text width=3cm, draw=black]%, fill=orange!30
+\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, text width=3cm, draw=black]%, fill=green!30
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+%smaller graphics captions
+%\usepackage{caption}
+%\captionsetup{font=footnotesize} % reduce size of caption because text is 11
+\usepackage[font=small,labelfont=bf]{caption}
+
+%options for page rotation 
+%\usepackage[final]{pdfpages}
+\usepackage{pdfpages}
+\usepackage{multirow}
+\usepackage{lscape}
+\usepackage{rotating}
+
+%math pacages
+\usepackage{float}
+\usepackage{mathtools}
+
+
+
+
+%packages to use helvetic sserif for headings
+%from here: https://graphicdesign.stackexchange.com/questions/46663/is-computer-modern-a-high-quality-font
+%if i use this need to change appearance in the TOC
+%    \usepackage{cmlgc,amssymb,amsmath}
+%      \DeclareTextCommandDefault{\textbullet}{\ensuremath{\bullet}}
+%    \usepackage[scaled]{helvet}
+%\usepackage[T1]{fontenc}
+   % ⋮
+%    \usepackage{sectsty}
+%      \allsectionsfont{\sffamily\raggedright}
+  
+\setcounter{secnumdepth}{1}
+%% remove number of subchapters
